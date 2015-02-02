@@ -1,0 +1,22 @@
+<table class="results">
+{?results}
+<thead>
+    <tr>
+        <th>Expected</th>
+        <th>Actual</th>
+        <th></th>
+        <th>Time</th>
+    </tr>
+</thead>
+{/results}
+<tbody>
+            {#results}
+            <tr>
+                <td>{note}</td>
+                <td>{selected}</td>
+                <td><span class="glyphicon glyphicon-{icon}"></span></td>
+                <td>{time}ms</td>
+            </tr>
+            {/results}
+</tbody>
+</table>

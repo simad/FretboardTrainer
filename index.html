@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>NoteFinder</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container-fluid">
+        <p class="navbar-text"><strong>Fretboard</strong>Trainer</p>
+    </div>
+</nav>
+<nav class="navbar navbar-inverse navbar-fixed-bottom">
+    <div class="container-fluid">
+        <p class="navbar-text">Suggestions? Comments? Feel free to reach out on:</p>
+        <p class="navbar-text"><a href="http://www.github.com/simad">Github</a></p>
+    </div>
+</nav>
+<div class="container">
+        <div class="control">
+            <div class="note"><span id="startstop" class="big glyphicon glyphicon-stop"></span></div>
+        </div>
+    <div id="fret" class="fretboard"></div>
+    {#notes}<div class="notes"><div class="note"><a>{.}</a></div></div>{/notes}
+
+    <div class="res"><span>Can you guess which note is selected on the fretboard?</span></div>
+    </div>
+</body>
+<script src="assets/js/3rdparty/svg.js"></script>
+<script src="assets/js/3rdparty/dust.full.min.js"></script>
+<script src="assets/js/3rdparty/jjquery-1.11.2.min.js"></script>
+<script src="assets/js/3rdparty/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/js/ResultsView.js"></script>
+<script type="text/javascript" src="assets/js/Notes.js"></script>
+<script type="text/javascript" src="assets/js/Tunings.js"></script>
+<script type="text/javascript" src="assets/js/Themes.js"></script>
+<script type="text/javascript" src="assets/js/Fretboard.js"></script>
+<script type="text/javascript" src="assets/js/FretboardView.js"></script>
+<script type="text/javascript" src="assets/js/NoteFinder.js"></script>
+</html>
